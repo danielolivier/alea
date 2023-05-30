@@ -25,9 +25,9 @@ export function UsersTable() {
   if (isLoading)
     return (
       <div className="grid items-start gap-2">
-        <Skeleton className="w-full h-[calc(100vh-240px)]"></Skeleton>
+        <Skeleton className="w-full h-[calc(100vh-275px)]"></Skeleton>
         <div className="flex justify-end w-full">
-          <Skeleton className="h-12 w-96"></Skeleton>
+          <Skeleton className="h-10 w-96"></Skeleton>
         </div>
       </div>
     );

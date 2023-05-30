@@ -1,5 +1,15 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+This project uses:
+
+[shadcn/ui](https://ui.shadcn.com/)
+[jest](https://jestjs.io/)
+[storybook](https://storybook.js.org/)
+[lucide-react](https://lucide.dev/)
+[zod](https://zod.dev/)
+[tanstack/query](https://tanstack.com/query/latest)
+[tanstack/table](https://tanstack.com/table/v8)
+
 ## Getting Started
 
 First, run the development server:
@@ -14,21 +24,31 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter and Open Sans, a custom Google Font.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## About
 
-## Learn More
+This project has a Login page, a Dashboard page and fallback 404 default page. Please log in using this username/password:
 
-To learn more about Next.js, take a look at the following resources:
+```
+    email: "eve.holt@reqres.in"
+    password: "pistol"
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Once successfully signed in, you'll be redirected to dashboard page where you'll be able to see a table displaying a list of users. On header you'll see a smiley face icon where you can click and a dropdown of options will prompt - currently there's only one option - and you can log out.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Check footer as I added my Linkedin link there and a toggle to switch themes in application.
 
-## Deploy on Vercel
+Things that can be improved:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- API call to get list of users is triggered all at once - there's a few reasons as why I did that. I had few time to do task and API returns only 12 users in total. Best scenario, would have been to use pagination to call API to update users and not load all data at rendering time.
+- Unit testing and storybooks - I did only a few of them and they are pretty basic. I mainly focused my time on achieving required features.
+- Styling can be slightly approved on responsiveness.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Deployed application
+
+You can find the application deployed here:
+
+[Alea Tech Test Application](https://alea.vercel.app) visit page.
+
+Daniel Olivier Barrachina - olivier.daniel.b@gmail.com

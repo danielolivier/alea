@@ -3,8 +3,14 @@ import { Meta, StoryObj } from "@storybook/react";
 import { Input } from "@/components/ui/input";
 
 const meta: Meta<typeof Input> = {
-  title: "input",
+  title: "components/ui/input",
   component: Input,
+  argTypes: {
+    type: {
+      control: "select",
+      options: ["text", "password", "color", "email", "file", "number"],
+    },
+  },
 };
 
 export default meta;

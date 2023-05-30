@@ -50,7 +50,7 @@ describe("user-auth-form", () => {
 
   afterEach(cleanup);
 
-  test("renders the form", () => {
+  test("renders component", () => {
     mockedUseForm.mockReturnValueOnce({
       register: jest.fn(),
       handleSubmit: jest.fn(),

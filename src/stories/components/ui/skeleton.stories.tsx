@@ -3,15 +3,14 @@ import { Meta, StoryObj } from "@storybook/react";
 import { Skeleton } from "@/components/ui/skeleton";
 
 const meta: Meta<typeof Skeleton> = {
-  title: "skeleton",
+  title: "components/ui/skeleton",
   component: Skeleton,
+  args: {
+    className: "h-16 w-full",
+  },
 };
 
 export default meta;
 type Story = StoryObj<typeof Skeleton>;
 
-export const SkeletonStorybook: Story = {
-  args: {
-    className: "h-16 w-full",
-  },
-};
+export const SkeletonExample: Story = {};

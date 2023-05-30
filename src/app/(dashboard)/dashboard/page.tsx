@@ -15,7 +15,7 @@ export default async function DashboardPage() {
   if (!user) redirect(authOptions?.pages?.signIn || "/login");
 
   return (
-    <div className="container mx-auto py-10">
+    <div className="container mx-auto">
       <UsersTable></UsersTable>
     </div>
   );

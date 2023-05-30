@@ -1,13 +1,17 @@
 {
   "name": "alea",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "author": {
+    "name": "Daniel Olivier",
+    "email": "olivier.daniel.b@gmail.com"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest",
+    "test": "jest --watch",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -19,9 +23,6 @@
     "@radix-ui/react-slot": "^1.0.1",
     "@tanstack/react-query": "^4.29.11",
     "@tanstack/react-table": "^8.9.1",
-    "@types/node": "20.2.3",
-    "@types/react-dom": "18.2.4",
-    "axios": "^1.4.0",
     "class-variance-authority": "^0.6.0",
     "clsx": "^1.2.1",
     "lucide-react": "^0.221.0",
@@ -47,6 +48,9 @@
     "@storybook/testing-library": "^0.0.14-next.2",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/node": "20.2.3",
+    "@types/react-dom": "18.2.4",
     "autoprefixer": "10.4.14",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.3",
